@@ -39,7 +39,7 @@ export class MainpageComponent {
   .subscribe((res)=>
   
  
-  this.personajes = res.map(({char_id, name, nickname,img,status,occupation}: Personaje) =>{
+  this.personajes = this.personajesCopy= res.map(({char_id, name, nickname,img,status,occupation}: Personaje) =>{
     
     return {
       char_id: char_id,
