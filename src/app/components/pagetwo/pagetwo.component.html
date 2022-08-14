@@ -13,9 +13,12 @@
             <div class="">
                 <p>Occupation</p>
 
-                <div *ngFor=" let s of personaje.occupation"></div>
+                <div *ngFor=" let o of personaje.occupation">
 
-                <strong>{{  personaje.occupation }}</strong>
+                    <strong>&bull;{{ o }}</strong>
+                </div>
+
+
 
             </div>
 
