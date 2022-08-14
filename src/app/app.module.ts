@@ -1,16 +1,30 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule} from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { APP_ROUTING } from './app.routing';
+import { MainpageComponent } from './components/mainpage/mainpage.component';
+import { PagetwoComponent } from './components/pagetwo/pagetwo.component';
+import { BreakingService } from './servicios/breaking.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainpageComponent,
+    PagetwoComponent,
+    NavbarComponent,
+    CardComponent
   ],
   imports: [
-    BrowserModule
+    APP_ROUTING,
+    BrowserModule,
+    HttpClientModule
+    
   ],
-  providers: [],
+  providers: [BreakingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,41 @@
+h1 {
+    padding: 5%;
+    color: lightblue;
+    margin-left: 400px;
+}
+
+div {
+    color: lightblue;
+    max-width: 1500px;
+    margin-left: 100px;
+}
+
+footer {
+    text-align: center;
+}
+
+.card {
+    margin: 50px;
+    max-width: 75%;
+    max-height: 75%;
+    margin-left: 250px;
+}
+
+.xti {
+    margin-left: 400px;
+}
+
+.tato {
+    margin-left: 1px;
+}
+
+.form-control {
+    max-width: 500px;
+    margin-left: 500px;
+    margin-bottom: 50px;
+}
+
+.img-logo {
+    margin-top: 100px;
+    margin-left: -50px;
+}

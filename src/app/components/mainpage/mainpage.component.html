@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>
+        <img class="img-logo" src="/assets/img/dos.jpg">
+    </h1>
+
+    <input type="text" class="form-control" placeholder="Walter White" (input)="filter($event)">
+
+
+    <div class="row">
+        <div *ngFor="let personaje of personajes" class="col-xl-4 col-sm-6 col-xs-12">
+            <app-pagetwo [personaje]="personaje"></app-pagetwo>
+        </div>
+    </div>
+</div>

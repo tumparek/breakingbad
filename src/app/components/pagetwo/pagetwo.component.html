@@ -1,0 +1,26 @@
+<div class="card my-4">
+    <div class="card" style="width: 18rem;">
+        <img [src]="personaje.img" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{personaje.name}}</h5>
+            <p class="card-text">{{personaje.nickname}}</p>
+            <span class="btn btn-sm" [ngClass]="{
+                'btn-success': personaje.status.toLowerCase().includes('alive'),
+                'btn-danger': !personaje.status.toLowerCase().includes('alive')
+            }">{{personaje.status}} </span>
+
+
+            <div class="">
+                <p>Occupation</p>
+
+                <div *ngFor=" let s of personaje.occupation"></div>
+
+                <strong>{{  personaje.occupation }}</strong>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
